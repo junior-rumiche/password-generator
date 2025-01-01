@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Generador de Contraseñas Seguras | Crea contraseñas únicas y fuertes</title>
+    <meta name="description"
+        content="Genera contraseñas seguras y únicas con nuestro generador de contraseñas online gratuito. Personaliza la longitud y los caracteres para crear contraseñas fuertes.">
+    <meta name="keywords"
+        content="generador de contraseñas, contraseñas seguras, generador contraseñas online, crear contraseña fuerte, password generator">
+    <meta name="author" content="Junior Rumiche">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Spanish">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://junior-rumiche.github.io/password-generator">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://junior-rumiche.github.io/password-generator">
+    <meta property="og:title" content="Generador de Contraseñas Seguras Online">
+    <meta property="og:description"
+        content="Crea contraseñas seguras y únicas con nuestro generador. Personaliza la longitud y tipos de caracteres para máxima seguridad.">
+    <meta property="og:image" content="https://junior-rumiche.github.io/password-generator/assets/preview.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://junior-rumiche.github.io/password-generator">
+    <meta property="twitter:title" content="Generador de Contraseñas Seguras Online">
+    <meta property="twitter:description"
+        content="Crea contraseñas seguras y únicas con nuestro generador. Personaliza la longitud y tipos de caracteres para máxima seguridad.">
+    <meta property="twitter:image" content="https://junior-rumiche.github.io/password-generator/assets/preview.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "WebApplication",
+        "name": "Generador de Contraseñas Seguras",
+        "description": "Herramienta online gratuita para generar contraseñas seguras y personalizables",
+        "url": "https://junior-rumiche.github.io/password-generator",
+        "author": {
+            "@type": "Person",
+            "name": "Junior Rumiche"
+        },
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "All",
+    }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="theme-switch">
+            <button class="theme-button active" id="darkTheme" title="Modo oscuro">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-3.03 0-5.5-2.47-5.5-5.5 0-1.82.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z" />
+                </svg>
+            </button>
+            <button class="theme-button" id="lightTheme" title="Modo claro">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0 .39-.39.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z" />
+                </svg>
+            </button>
+        </div>
+
+        <main>
+            <h1>Generador de Contraseñas</h1>
+            <p class="subtitle">Crea contraseñas seguras y únicas con un solo clic</p>
+
+            <div class="password-container">
+                <div class="password-display">
+                    <input type="text" id="passwordOutput" readonly aria-label="Contraseña generada">
+                    <span class="strength-badge" id="strengthBadge" role="status" aria-live="polite">Muy fuerte</span>
+                    <button id="regenerateBtn" class="icon-button" title="Generar nueva contraseña"
+                        aria-label="Generar nueva contraseña">
+                        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z" />
+                        </svg>
+                    </button>
+                    <button id="copyBtn" class="primary-button">Copiar</button>
+                </div>
+
+                <div class="options">
+                    <div class="length-control">
+                        <label for="lengthSlider">Longitud de la contraseña: <span id="lengthValue">20</span></label>
+                        <div class="slider-container">
+                            <button class="control-button" id="decreaseLength"
+                                aria-label="Disminuir longitud">−</button>
+                            <input type="range" id="lengthSlider" min="8" max="32" value="20"
+                                aria-label="Selector de longitud de contraseña">
+                            <button class="control-button" id="increaseLength" aria-label="Aumentar longitud">+</button>
+                        </div>
+                    </div>
+
+                    <div class="character-options">
+                        <label>Caracteres utilizados:</label>
+                        <div class="checkbox-group" role="group" aria-label="Opciones de caracteres">
+                            <label class="checkbox">
+                                <input type="checkbox" id="uppercase" checked>
+                                <span>ABC</span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" id="lowercase" checked>
+                                <span>abc</span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" id="numbers" checked>
+                                <span>123</span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" id="symbols" checked>
+                                <span>#$&</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p class="footer-text">© 2024 Generador de Contraseñas. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
