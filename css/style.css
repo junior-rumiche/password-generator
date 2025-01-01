@@ -353,3 +353,37 @@ input[type="checkbox"] {
 [data-theme="light"] .checkbox {
     border: 1px solid var(--border-alpha);
 }
+
+footer {
+    margin-top: 3rem;
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 1px solid var(--border-alpha);
+}
+
+.footer-text {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.footer-text a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-text a:hover {
+    color: var(--accent-color);
+}
+
+.footer-text span[role="img"] {
+    color: var(--error-color);
+    display: inline-block;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.footer-text span[role="img"]:hover {
+    transform: scale(1.2);
+}
