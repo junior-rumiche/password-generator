@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Sitemap: https://password-generator-one-tan.vercel.app/sitemap.xml
+
+# Archivos y directorios específicos a no indexar
+Disallow: /css/
+Disallow: /js/
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /node_modules/
