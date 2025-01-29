@@ -6,36 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>Generador de Contraseñas Seguras | Crea contraseñas únicas y fuertes</title>
+    <title>Generador de Contraseñas Seguras | Crea contraseñas únicas y fuertes - Junior Rumiche</title>
     <meta name="description"
-        content="Genera contraseñas seguras y únicas con nuestro generador de contraseñas online gratuito. Personaliza la longitud y los caracteres para crear contraseñas fuertes.">
+        content="Genera contraseñas seguras y únicas con nuestro generador de contraseñas online gratuito. Desarrollado por Junior Rumiche. Personaliza la longitud y los caracteres para crear contraseñas fuertes.">
     <meta name="keywords"
-        content="generador de contraseñas, contraseñas seguras, generador contraseñas online, crear contraseña fuerte, password generator">
+        content="generador de contraseñas, contraseñas seguras, generador contraseñas online, crear contraseña fuerte, password generator, junior rumiche, desarrollador web, software engineer">
     <meta name="author" content="Junior Rumiche">
     <meta name="robots" content="index, follow">
     <meta name="language" content="Spanish">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://junior-rumiche.github.io/password-generator">
+    <link rel="canonical" href="https://password-generator-one-tan.vercel.app">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://junior-rumiche.github.io/password-generator">
-    <meta property="og:title" content="Generador de Contraseñas Seguras Online">
+    <meta property="og:url" content="https://password-generator-one-tan.vercel.app">
+    <meta property="og:title" content="Generador de Contraseñas Seguras Online - Por Junior Rumiche">
     <meta property="og:description"
-        content="Crea contraseñas seguras y únicas con nuestro generador. Personaliza la longitud y tipos de caracteres para máxima seguridad.">
-    <meta property="og:image" content="https://junior-rumiche.github.io/password-generator/assets/preview.png">
+        content="Crea contraseñas seguras y únicas con nuestro generador. Desarrollado por Junior Rumiche. Personaliza la longitud y tipos de caracteres para máxima seguridad.">
+    <meta property="og:image" content="https://password-generator-one-tan.vercel.app/assets/preview.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://junior-rumiche.github.io/password-generator">
-    <meta property="twitter:title" content="Generador de Contraseñas Seguras Online">
+    <meta property="twitter:url" content="https://password-generator-one-tan.vercel.app">
+    <meta property="twitter:title" content="Generador de Contraseñas Seguras Online - Por Junior Rumiche">
     <meta property="twitter:description"
-        content="Crea contraseñas seguras y únicas con nuestro generador. Personaliza la longitud y tipos de caracteres para máxima seguridad.">
-    <meta property="twitter:image" content="https://junior-rumiche.github.io/password-generator/assets/preview.png">
+        content="Crea contraseñas seguras y únicas con nuestro generador. Desarrollado por Junior Rumiche. Personaliza la longitud y tipos de caracteres para máxima seguridad.">
+    <meta property="twitter:image" content="https://password-generator-one-tan.vercel.app/assets/preview.png">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
     <!-- Fonts -->
@@ -53,15 +53,20 @@
     {
         "@context": "http://schema.org",
         "@type": "WebApplication",
-        "name": "Generador de Contraseñas Seguras",
-        "description": "Herramienta online gratuita para generar contraseñas seguras y personalizables",
-        "url": "https://junior-rumiche.github.io/password-generator",
+        "name": "Generador de Contraseñas Seguras por Junior Rumiche",
+        "description": "Herramienta online gratuita para generar contraseñas seguras y personalizables, desarrollada por Junior Rumiche",
+        "url": "https://password-generator-one-tan.vercel.app",
         "author": {
             "@type": "Person",
             "name": "Junior Rumiche"
         },
         "applicationCategory": "SecurityApplication",
         "operatingSystem": "All",
+        "creator": {
+            "@type": "Person",
+            "name": "Junior Rumiche",
+            "sameAs": "https://github.com/junior-rumiche"
+        }
     }
     </script>
 </head>
@@ -140,11 +145,14 @@
 
         <footer>
             <p class="footer-text">
-                © 2024 Password Generator &nbsp;•&nbsp; Made with
+                © <span id="currentYear"></span> Password Generator &nbsp;•&nbsp; Made with
                 <span aria-label="love" role="img">❤️</span> by
                 <a href="https://github.com/junior-rumiche" target="_blank" rel="noopener noreferrer">Junior Rumiche</a>
             </p>
         </footer>
+        <script>
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        </script>
     </div>
     <script src="js/script.js"></script>
 </body>
