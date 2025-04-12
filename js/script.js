@@ -118,19 +118,19 @@ document.addEventListener('DOMContentLoaded', () => {
         let color = '';
 
         if (length < 8) {
-            strength = 'Muy débil';
+            strength = 'Very Weak';
             color = 'var(--error-color)';
         } else if (length < 12 || variety_count < 2) {
-            strength = 'Débil';
+            strength = 'Weak';
             color = 'var(--warning-color)';
         } else if (length < 16 || variety_count < 3) {
-            strength = 'Moderada';
+            strength = 'Moderate';
             color = 'var(--warning-color)';
         } else if (length < 20 || variety_count < 4) {
-            strength = 'Fuerte';
+            strength = 'Strong';
             color = 'var(--success-color)';
         } else {
-            strength = 'Muy fuerte';
+            strength = 'Very Strong';
             color = 'var(--success-color)';
         }
 
